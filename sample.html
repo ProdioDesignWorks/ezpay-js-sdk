@@ -7,6 +7,29 @@
 	</body>
 </html>
 <script type='text/javascript'>
+/*
+`https://1kfkd7w1qi.execute-api.us-west-2.amazonaws.com/alpha/merchant` - `POST` - login with signup
+`https://1kfkd7w1qi.execute-api.us-west-2.amazonaws.com/alpha/merchant/token` - `POST` - validate token
+
+```{
+"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyYW5kb20iOiJtbHcxMGk2IiwidXNlcklkIjoiYzNjYWIxNTktYjJhZi00Yjg0LTgzOTctNzg2YTkwMjI4YjFlIiwicm9sZSI6Ik1FUkNIQU5UIiwianRpIjoiODg4ODg3NzktNWNkYi00NTRjLWFjMTgtZWMzM2M5ZjU5NDE2IiwiaWF0IjoxNTQ4MzIzMTM4LCJleHAiO1Nzk4NTkxMzh9.0JUAvQiMPh5cpLgA5yXvAZoYwxP-vBrHuev8V8k7wpc"
+}```
+
+{
+"name":"Ankush K",
+"business" : "",
+"phone": "",
+"address":"",
+"country":"",
+"state":"",
+"city":"",
+"zip":"",
+"logo":"",
+"email":"ankush@prodio.in",
+"password":"Prodio@23"
+}
+
+*/
 EZPaySDK.getEzPayLoginStatus({
     merchantId: 1,
     token: 'asdfasf',
