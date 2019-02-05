@@ -14,8 +14,23 @@
 	    }
 	});
 
+	let merchantInfo = {
+					"apiKey":"",
+					"origin":"",
+					"name":"Ankush K",
+					"business" : "",
+					"phone": "",
+					"address":"",
+					"country":"",
+					"state":"",
+					"city":"",
+					"zip":"",
+					"logo":"",
+					"email":"ankush@prodio.in"
+				};
+
 	EZPaySDK.loginWithEzPay({
-		merchantInfo:{"apiKey":"","origin":"","parentMerchantId":"","firstName":"Shashi","lastName":"sharma","email":"", "mobileNumber":"", "address":"", "city":"", "state":"", "zipCode":"", "country":""},
+		merchantInfo:merchantInfo,
 		environment:"dev", //dev / alpha / prod
 	    success: function(data) { console.log("success==>"+JSON.stringify(data)); },
 	    error: function(data) { console.log("error==>"+JSON.stringify(data)); },
